@@ -22,7 +22,7 @@ jobs:
           toolchain: nightly
           target: x86_64-unknown-linux-gnu
           override: true
-          components: rustfmt, clippy
+          components: rustfmt, clippy, rust-src
     - name: Build
       run: cargo build --verbose --target x86_64-unknown-linux-gnu --release -Z build-std=panic_abort,std
     - name: Run tests
