@@ -407,7 +407,7 @@ pub fn parse_tar(i: &[u8]) -> IResult<CompleteByteSlice<'_>, Vec<TarEntry<'_>>> 
 #[cfg(test)]
 mod tests {
     use super::*;
-    use std::str::from_utf8;
+    use core::str::from_utf8;
     use nom::ErrorKind;
 
     const EMPTY: CompleteByteSlice<'_> = CompleteByteSlice(b"");
