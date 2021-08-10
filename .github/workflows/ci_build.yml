@@ -24,6 +24,6 @@ jobs:
           override: true
           components: rustfmt, clippy
     - name: Build
-      run: cargo build --verbose --release -Z build-std=panic_abort,std
+      run: cargo build --verbose --target x86_64-unknown-linux-gnu --release -Z build-std=panic_abort,std
     - name: Run tests
-      run: cargo test --verbose --release -Z build-std=panic_abort,std
+      run: cargo test --verbose --target x86_64-unknown-linux-gnu --release -Z build-std=panic_abort,std
