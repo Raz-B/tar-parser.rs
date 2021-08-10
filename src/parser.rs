@@ -1,4 +1,5 @@
-use std::str::{from_utf8, Utf8Error};
+use core::str::{from_utf8, Utf8Error};
+use alloc::vec::Vec;
 use nom::*;
 use nom::types::CompleteByteSlice;
 
