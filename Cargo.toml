@@ -14,6 +14,11 @@ license = "MIT"
 [lib]
 name = "tar"
 
+[features]
+alloc = []
+std = ["alloc"]
+default = ["std"]
+
 [dependencies]
 nom = { version = "4.2.3", default-features = false, features = ["alloc"] }
 
